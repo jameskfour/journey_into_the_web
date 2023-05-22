@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <meta charset="utf-8">
+        <title>CSS Quicksheet</title>
+    </header>
+    <body>
+        <h1 id="header">CSS Quicksheet</h1>
+        <h2>Basic syntax</h2>
+        <ul>
+            <li><b>Selectors</b> refer to the html element to which the rule applies</li>
+            <ol>
+                <li><b>Universal</b>, for elements of any type</li>
+                <li><b>Type selectors</b>, for elements of any given type</li>
+                <li><b>Class selectors</b>, for elements with a given class</li>
+                <li><b>ID selectors</b>, for an element with a given ID, used for specificity or having links to a section on the current page</li>
+                <li><b>Grouping Selectors</b>, separated by commas, to cut down on repetition for common styles</li>
+                <li><b>Chaining Selectors</b>, for specifying an element that has both of the given classes or IDs</li>
+                <li><b>Descendant Combinator</b>, for specifying a given child class as long as it has the given ancestor class</li>
+            </ol>
+            <li><b>Properties</b> refer to how the element will be changed on the page</li>
+            <ul>
+                <li><b>color</b>, can be a color name, HEX, RGB or HSL values</li>
+                <li><b>background-color</b>, follows the same as <b>color</b></li>
+                <li><b>font-family</b>, can be a single value or a list. If the first font is unsupported, it tries the next, and so on. Typically, end the list with a generic family name like <i>sans-serif</i></li>
+                <li><b>font-size</b>, measured in px</li>
+                <li><b>font-weight</b>, affects boldness in supported fonts. Accepted alues are keywords or a number between 1 and 1000</li>
+                <li><b>text-align</b>, uses common keywords preceded by a colon to align as desired</li>
+                <li><b>height and with regarding images</b>, using "auto" for height, and adjusting the width to scale proportionately. Best to be included regardless of adjustments to reserve space on the webpage during slo liading to prevent shifting of contents</li>
+            </ul>
+        </ul>
+        <p>CSS can be added externally, through a separate file linked in the HTML's header 
+            with a self closing link element, ie: link rel="stylesheet" href="styles.css."
+            "href" is the location of the file, while "rel" specifies the relationship between the HTML file and the linked file.
+            Alternatively, CSS can be written internally in the HTML file itself, within a pair of "style" tags.
+        </p>
+        <a href="#header">Return to Top</a>
+    </body>
+</html>
