@@ -1,20 +1,25 @@
 
 .logo {
     text-align: center;
-    border: 2px solid black;
+    border: 3px solid black;
 }
-
 img {
     height: auto;
-    width: 300px;
+    width: 250px;
 }
-
 #git-logo{
     height: auto;
     width: 150px;
     float:right;
 }
 
-#header{
-    text-align: center;
+.main-container{
+    display: flex;
+}
+.reference-list{
+    display: flex;
+    flex-direction: column;
+}
+.reference-item{
+    padding: 1%;
 }
