@@ -45,11 +45,35 @@ img {
 }
 
 .git-page-title {
-    margin-left:43.5%;
+    margin-left: 43.5%;
     justify-content: center;
 }
 
 .git-img-link {
     margin-left: auto;
     padding: 5px;
+}
+
+.html-page-title {
+    text-align: center;
+}
+
+.css-page-title {
+    text-align: center;
+}
+
+.css-heading-one {
+    text-align: center;
+}
+
+.css-syntax-container {
+    display: flex;
+}
+
+.selectors-container {
+    width: 50%;
+}
+
+.properties-container {
+    width: 50%;
 }
