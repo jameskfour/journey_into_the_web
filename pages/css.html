@@ -11,25 +11,26 @@
         <a href="../index.html"><img src="../images/logo.png" alt="Site Logo"></a>
     </div>
     <h1 class="css-page-title" id="header">CSS Quicksheet</h1>
-    <h2 class="css-heading-one">Basic syntax</h2>
+    <h2 class="css-heading">Basic syntax</h2>
     <div class="css-syntax-container">
-
         <div class="selectors-container">
             <p><b>Selectors</b> are used to specify elements to apply css rules to.</p>
-            <ol>
+            <ul>
                 <li><b>Universal</b>, or *, specifies elements of any type.</li>
                 <li><b>Type selectors</b>, ie p, h1, img, specifies elements of any of the given type.</li>
                 <li><b>Class selectors</b>, ie p class="paragraph", allows you to specify any element with the given
                     class. When writing the css rule, the class name must be preceded by a period.</li>
                 <li><b>ID selectors</b>, ie p id="first-paragraph", is useful for links to a section on the current
-                    page, or for targeting a highly specific element.</li>
+                    page, or for targeting a highly specific element. When writing the css rule, the id name must be
+                    preceded by a # sign.</li>
                 <li><b>Grouping Selectors</b>, separated by commas, allows you to cut down on repetition in your css
                     rules for common styles.</li>
-                <li><b>Chaining Selectors</b>, are for specifying an element that has both of the given classes or IDs
+                <li><b>Chaining Selectors</b>, separated by a period, are for specifying an element that has both of the
+                    given classes or IDs.
                 </li>
-                <li><b>Descendant Combinator</b>, are for specifying a given child class as long as it has the given
-                    ancestor class</li>
-            </ol>
+                <li><b>Descendant Combinator</b>, separated by a space, are for specifying the ast selector <b>only</b>
+                    if it has a parent with the previous selector.</li>
+            </ul>
         </div>
         <div class="properties-container">
             <p><b>Properties</b> refer to how the element will be changed on the page.</p>
@@ -46,13 +47,27 @@
                     proportionately. It is best to be included regardless of adjustments to reserve space on the webpage
                     during slow loading to prevent shifting of contents.</li>
             </ul>
+            <p>For a list of all properties, see <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">
+                    Mozilla's CSS reference page.</a></p>
         </div>
     </div>
-    <p>CSS can be added externally, through a separate file linked in the HTML's header
+    <h4>CSS can be added externally, through a separate file linked in the HTML's header
         with a self closing link element, ie: link rel="stylesheet" href="styles.css", where
         "href" is the location of the file, while "rel" specifies the relationship between the HTML file and the linked
         file. Alternatively, CSS can be written internally in the HTML file itself, within a pair of "style" tags.
-    </p>
+    </h4>
+    <h2 class="css-heading">The Cascade</h2>
+    <p><b>The Cascade</b> determines which rules get applied through an ordering of priority. This order is based on:</p>
+    <ol>
+        <li>
+            <b>Specificity</b>, where <b>ID</b> has the highest priority, followed by <b>class</b> and ending with
+            <b>type</b>. Additionally, a larger amount of a single selector will beat a smaller amount of the same.
+            <b>Universal selectors</b> and <b>Combinators</b> have no specificty in and of themselves, therefore do not
+            affect priority.
+        </li>
+        <li><b>Inheritance</b>, where specifically targeting an element's property overrules an inherited property.</li>
+        <li><b>Rule Order</b>, where the last defined rule is the final output.</li>
+    </ol>
     <a href="#header">Return to Top</a>
 </body>
 
