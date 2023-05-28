@@ -45,8 +45,11 @@ img {
 }
 
 .git-page-title {
+    margin-left:43.5%;
+    justify-content: center;
 }
 
 .git-img-link {
+    margin-left: auto;
     padding: 5px;
 }
