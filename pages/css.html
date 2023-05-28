@@ -15,44 +15,43 @@
     <div class="css-syntax-container">
 
         <div class="selectors-container">
-            <p><b>Selectors</b> refer to the html element to which the rule applies</p>
+            <p><b>Selectors</b> are used to specify elements to apply css rules to.</p>
             <ol>
-                <li><b>Universal</b>, for elements of any type</li>
-                <li><b>Type selectors</b>, for elements of any given type</li>
-                <li><b>Class selectors</b>, for elements with a given class</li>
-                <li><b>ID selectors</b>, for an element with a given ID, used for specificity or having links to a
-                    section on the current page</li>
-                <li><b>Grouping Selectors</b>, separated by commas, to cut down on repetition for common styles</li>
-                <li><b>Chaining Selectors</b>, for specifying an element that has both of the given classes or IDs
+                <li><b>Universal</b>, or *, specifies elements of any type.</li>
+                <li><b>Type selectors</b>, ie p, h1, img, specifies elements of any of the given type.</li>
+                <li><b>Class selectors</b>, ie p class="paragraph", allows you to specify any element with the given
+                    class. When writing the css rule, the class name must be preceded by a period.</li>
+                <li><b>ID selectors</b>, ie p id="first-paragraph", is useful for links to a section on the current
+                    page, or for targeting a highly specific element.</li>
+                <li><b>Grouping Selectors</b>, separated by commas, allows you to cut down on repetition in your css
+                    rules for common styles.</li>
+                <li><b>Chaining Selectors</b>, are for specifying an element that has both of the given classes or IDs
                 </li>
-                <li><b>Descendant Combinator</b>, for specifying a given child class as long as it has the given
+                <li><b>Descendant Combinator</b>, are for specifying a given child class as long as it has the given
                     ancestor class</li>
             </ol>
         </div>
         <div class="properties-container">
-            <p><b>Properties</b> refer to how the element will be changed on the page</p>
+            <p><b>Properties</b> refer to how the element will be changed on the page.</p>
             <ul>
-                <li><b>color</b>, can be a color name, HEX, RGB or HSL values</li>
-                <li><b>background-color</b>, follows the same as <b>color</b></li>
-                <li><b>font-family</b>, can be a single value or a list. If the first font is unsupported, it tries
-                    the
-                    next, and so on. Typically, end the list with a generic family name like <i>sans-serif</i></li>
-                <li><b>font-size</b>, measured in px</li>
-                <li><b>font-weight</b>, affects boldness in supported fonts. Accepted alues are keywords or a number
-                    between 1 and 1000</li>
-                <li><b>text-align</b>, uses common keywords preceded by a colon to align as desired</li>
-                <li><b>height and width regarding images</b>, using "auto" for height, and adjusting the width to
-                    scale
-                    proportionately. Best to be included regardless of adjustments to reserve space on the webpage
-                    during slo liading to prevent shifting of contents</li>
+                <li><b>color</b>: can be a color name, HEX, RGB or HSL values.</li>
+                <li><b>background-color</b>: follows the same as <b>color</b>.</li>
+                <li><b>font-family</b>: can be a single value or a list. If the first font is unsupported, it tries the
+                    next, and so on. Typically, end the list with a generic family name like <i>sans-serif</i>.</li>
+                <li><b>font-size</b>: measured in px.</li>
+                <li><b>font-weight</b>: affects boldness in supported fonts. Accepted alues are keywords or a number
+                    between 1 and 1000.</li>
+                <li><b>text-align</b>: use center, right or left, preceded by a colon, to align as desired.</li>
+                <li><b>height and width regarding images</b>, using "auto" for height, and adjusting the width to scale
+                    proportionately. It is best to be included regardless of adjustments to reserve space on the webpage
+                    during slow loading to prevent shifting of contents.</li>
             </ul>
         </div>
     </div>
     <p>CSS can be added externally, through a separate file linked in the HTML's header
-        with a self closing link element, ie: link rel="stylesheet" href="styles.css."
+        with a self closing link element, ie: link rel="stylesheet" href="styles.css", where
         "href" is the location of the file, while "rel" specifies the relationship between the HTML file and the linked
-        file.
-        Alternatively, CSS can be written internally in the HTML file itself, within a pair of "style" tags.
+        file. Alternatively, CSS can be written internally in the HTML file itself, within a pair of "style" tags.
     </p>
     <a href="#header">Return to Top</a>
 </body>
