@@ -54,15 +54,7 @@ img {
     padding: 5px;
 }
 
-.html-page-title {
-    text-align: center;
-}
-
-.css-page-title {
-    text-align: center;
-}
-
-.css-heading-one {
+.html-page-title, .css-page-title, .css-heading-one {
     text-align: center;
 }
 
@@ -70,10 +62,6 @@ img {
     display: flex;
 }
 
-.selectors-container {
-    width: 50%;
-}
-
-.properties-container {
+.selectors-container, .properties-container {
     width: 50%;
 }
