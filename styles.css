@@ -1,42 +1,24 @@
+.header-container{
+display: flex;
+}
+
+.header-item{
+    border: 1px solid black;
+}
+
+.header-logo{
+height: auto;
+width: 150px;
+}
+
 .logo {
     text-align: center;
     border: 3px solid rgb(148, 84, 32);
 }
 
-img {
-    height: auto;
-    width: 250px;
-}
-
 #git-logo {
     height: auto;
     width: 150px;
-}
-
-.index-main-container {
-    display: flex;
-}
-
-.index-left-list {
-    padding: 5px;
-    border: 3px solid rgb(148, 84, 32);
-}
-
-.index-body {
-    padding: 5px;
-    border: 3px solid rgb(148, 84, 32);
-}
-
-.index-reference-list {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    border: 3px solid rgb(148, 84, 32);
-}
-
-.index-reference-item {
-    padding: 5px;
-    border: 1px solid rgb(148, 84, 32);
 }
 
 .git-page-banner {
@@ -54,7 +36,9 @@ img {
     padding: 5px;
 }
 
-.html-page-title, .css-page-title, .css-heading {
+.html-page-title,
+.css-page-title,
+.css-heading {
     text-align: center;
 }
 
@@ -62,7 +46,8 @@ img {
     display: flex;
 }
 
-.selectors-container, .properties-container {
-    border:3px solid rgb(148, 84, 32);
+.selectors-container,
+.properties-container {
+    border: 3px solid rgb(148, 84, 32);
     width: 50%;
 }
