@@ -28,7 +28,15 @@
     height: auto;
     width: 150px;
 }
-
+.first-container{
+    display: flex;
+}
+.description-container{
+margin-left: 10%;
+}
+.description-image-container{
+margin-right: 5%;
+}
 .logo {
     text-align: center;
     border: 3px solid rgb(148, 84, 32);
