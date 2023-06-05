@@ -1,14 +1,32 @@
-.header-container{
-display: flex;
-}
-
-.header-item{
+* {
     border: 1px solid black;
+
 }
 
-.header-logo{
-height: auto;
-width: 150px;
+.header-container {
+    display: flex;
+}
+
+.header-logo {
+    margin-left: 10%;
+}
+
+.links-item {
+    margin: 10px;
+    font-size: large;
+}
+
+.header-links-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: 10%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-logo {
+    height: auto;
+    width: 150px;
 }
 
 .logo {
