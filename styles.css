@@ -30,14 +30,16 @@
 }
 .first-container{
     display: flex;
-}
-.description-container{
-margin-left: 10%;
-
+    margin: 10%;
 }
 .description-image-container{
-margin-right:10%;
 margin-left: auto;
+}
+.second-container{
+    margin: 10%;
+}
+.topics-container{
+    display: flex;
 }
 .logo {
     text-align: center;
