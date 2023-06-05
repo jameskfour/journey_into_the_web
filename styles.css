@@ -33,9 +33,11 @@
 }
 .description-container{
 margin-left: 10%;
+
 }
 .description-image-container{
-margin-right: 5%;
+margin-right:10%;
+margin-left: auto;
 }
 .logo {
     text-align: center;
